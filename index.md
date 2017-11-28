@@ -3,31 +3,22 @@ layout: default
 ---
 <!-- TODO: REMOVE THE DIV SOUP!! -->
 <div class="flex-container flex-container--space-around flex-container--fixed">
-  <div class="flex-container flex-container--vertical flex-container--start-align">
-    <article class="card">
-        <header class="card__header card__header--no-padding">
+    <article class="landing">
+        <header class="landing__title">
           <h1>{{ site.product.tagline }}</h1>
         </header>
-        <p class="card__body card__body--no-padding">
+        <p class="landing__description">
           {{ site.product.description }}
         </p>
+        <a class="button landing__start" href="{{ site.product.url }}">Get Started</a>
+        <a class="button landing__learn" href="{{ site.product.url }}">Learn More</a>
     </article>
-    <div class="flex-container flex-container--space-around">
-      <a class="button" href="{{ site.product.url }}">Get Started</a>
-      <a class="button" href="{{ site.product.url }}">Learn More</a>
-    </div>
-  </div>
   {% unless site.product.demo %}
     <div id="demo" class="demo"></div>
   {% else %}
     <img src="{{ site.demo }}" alt="">
   {% endunless %}
 </div>
-
-<!-- <section id="features">
-  <h2>Why {{ site.product.name }}</h2>
-
-</section> -->
 
 <section id="blog">
   <h2 class="h--centered">Blog</h2>
@@ -50,38 +41,9 @@ layout: default
     </ul>
 </section>
 
-<!-- <article id="about" class="horizontal-card">
-  <h2 class="horizontal-card__title">Who we are</h2>
-    <figure class="horizontal-card__element">
-      <img src="{{ site.data.organization.logo }}" alt="{{ site.data.organization.name }}">
-      {% if site.data.organization.sameAs %}
-        {% include social-profiles.html sites=site.data.organization.sameAs %}
-      {% endif %}
-    </figure>
-    <p class="horizontal-card__element">
-      {{ site.data.organization.description }}
-    </p>
-
-  <ol class="timeline">
-    {% for event in site.data.timeline %}
-        <li class="timeline__event">
-          <a href="#">
-            <article>
-              <time datetime="{{ event.date | date_to_xmlschema }}" class="timeline__date"> {{  event.date | date: "%d %b, %Y" }}</time>
-              <h3>{{ event.title }}</h3>
-              <p>
-                {{ event.text | truncate: 40 }}
-              </p>
-            </article>
-          </a>
-        </li>
-    {% endfor %}
-  </ol>
-</article> -->
-
 <section id="team">
   <h2 class="h--centered">Our team</h2>
-  <ul class="flex-container flex-container--space-arond">
+  <ul class="flex-container flex-container--space-around">
     {% for author in site.data.authors %}
       <li>
         <article id="{{ author.first }}" class="card card--shadow">

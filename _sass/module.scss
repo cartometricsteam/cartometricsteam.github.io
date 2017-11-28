@@ -64,6 +64,7 @@ Centered headlines
 .h--centered {
     text-align: center;
 }
+
 /*
 Navigation
 ===============================================================================
@@ -143,11 +144,45 @@ Modifiers
 }
 
 .flex-container--fixed {
-  height: 80vh;
+  height: 75vh;
 }
 
 .flex-container--margin-top {
   margin-top: 1rem;
+}
+/*
+Landing
+===============================================================================
+*/
+/*
+Block
+*/
+.landing {
+  display: grid;
+  grid-template-areas:
+    "title       title      "
+    "description description"
+    "learn       start      ";
+    align-content: start;
+    grid-column-gap: 0.5rem;
+    max-width: $content-width / 2;
+    margin: 0.5rem;
+}
+
+.landing__title {
+  grid-area: title;
+}
+
+.landing__description {
+  grid-area: description;
+}
+
+.landing__learn {
+  grid-area: learn;
+}
+
+.landing__start {
+  grid-area: start;
 }
 
 /*
@@ -324,7 +359,7 @@ Map
 ===============================================================================
 */
 .demo {
-  width: $content-width / 1;
+  width: $content-width;
   height: 45vh;
   border-radius: 0.25rem;
 }
