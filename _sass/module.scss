@@ -1,0 +1,367 @@
+/*
+Grid
+===============================================================================
+*/
+/*
+Block
+*/
+.grid-container {
+  display: grid;
+  grid-template-columns: $margin 1fr minmax($content-width / 2, $content-width * 2) 1fr $margin;
+  grid-template-areas:
+    "header header header header header"
+    ".      .      main   .      .     "
+    ".      .      footer .      .     ";
+  grid-row-gap: 3rem;
+}
+
+/*
+Elements
+*/
+.grid-container__header {
+  grid-area: header;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:1;
+  top: 0;
+  background-color: $background-color;
+  border-bottom: 0.03125rem solid darken($background-color,7.5%);
+  max-height: 10vh;
+}
+
+.grid-container__main {
+  grid-area: main;
+  display: grid;
+  grid-row-gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 0.75s;
+  animation-name: fade-in;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+
+.grid-container__footer {
+  grid-area: footer;
+  justify-self: center;
+  align-content: space-around;
+  display: grid;
+  height: 50vh;
+  grid-template-columns: minmax(min-content, max-content);
+  grid-template-areas:
+    "address"
+    "small";
+  border-top: 0.03125rem solid darken($background-color,7.5%);
+}
+
+/*
+Centered headlines
+===============================================================================
+*/
+.h--centered {
+    text-align: center;
+}
+/*
+Navigation
+===============================================================================
+*/
+/*
+Block
+*/
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/*
+Elements
+*/
+.navigation__link-list {
+  @media (max-width: #{$min-scale-size}px) {
+    font-size: #{$min-font-size}px;
+  };
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-around;
+  position: relative;
+}
+
+.navigation__link {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.25rem;
+}
+
+/*
+Modifier
+*/
+.navigation__link--title {
+  @extend .navigation__link;
+}
+
+/*
+Flex container
+===============================================================================
+*/
+/*
+Block
+*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+/*
+Modifiers
+*/
+.flex-container--vertical {
+  @extend .flex-container;
+  flex-direction: column;
+  align-items: space-around;
+}
+ .flex-container--start-align {
+   @extend .flex-container;
+   justify-content: flex-start;
+ }
+
+.flex-container--space-around {
+  @extend .flex-container;
+  justify-content: space-around;
+}
+
+.flex-container--end-align {
+  @extend .flex-container;
+  justify-content: flex-end;
+}
+
+.flex-container--fixed {
+  height: 80vh;
+}
+
+.flex-container--margin-top {
+  margin-top: 1rem;
+}
+
+/*
+Cards
+===============================================================================
+*/
+
+/*
+Block
+*/
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "image "
+    "header"
+    "body  ";
+  max-width: $content-width / 2;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+/*
+Elements
+*/
+.card__image {
+  grid-area: image;
+  border-radius: 0.25rem 0.25rem 0 0;
+
+}
+
+.card__header {
+  grid-area: header;
+  padding: 0 1rem 0 1rem;
+}
+
+.card__meta {
+  font-size: 0.75rem;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: $light-text-color;
+}
+
+.card__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0.25rem 0 0.25rem 0;
+}
+
+.card__body {
+  grid-area: body;
+  padding: 0 1rem 0.5rem 1rem;
+}
+/*
+Modifiers
+*/
+.card--shadow {
+  @extend .card;
+  box-shadow: 0.25rem 0.25rem 0.75rem 0.125rem lighten($text-color, 70%);
+  &:hover, &:focus {
+    animation-duration: 0.5s;
+    animation-name: hover--shadow;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  }
+}
+
+.card__header--no-padding {
+  @extend .card__header;
+  padding: 0;
+}
+
+.card__body--no-padding {
+  @extend .card__body;
+  padding: 0;
+}
+
+.card--big {
+  @extend .card;
+  max-width: $content-width;
+}
+
+/*
+Posts
+===============================================================================
+*/
+.post {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-row-gap: 2rem;
+  max-width: $content-width;
+}
+
+.post__header {
+  grid-area: header;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-height: 95vh;
+}
+
+.post__main {
+  grid-area: main;
+}
+
+.post__footer {
+  grid-area: footer;
+}
+
+.post__meta {
+  font-size: 0.85rem;
+  text-align: center;
+  color: $light-text-color;
+}
+
+.post__image {
+  order: -1;
+}
+
+.post__profile {
+  display: grid;
+  grid-template-columns: $content-width / 4 1fr;
+  align-content: flex-start;
+  grid-column-gap: 1rem;
+  font-style: normal;
+  font-size: 0.825rem;
+}
+
+.post__profile-name {
+  font-weight: bold;
+}
+
+/*
+Contact
+===============================================================================
+*/
+.contact__mode {
+  margin-bottom: 1rem;
+}
+
+/*
+Button
+===============================================================================
+*/
+/*
+Block
+*/
+.button {
+  border: 0.125rem solid $brand-color;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  color: $brand-color;
+
+  &:hover {
+    animation-duration: 0.3s;
+    animation-name: hover--button;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  }
+}
+
+/*
+Map
+===============================================================================
+*/
+.demo {
+  width: $content-width / 1;
+  height: 45vh;
+  border-radius: 0.25rem;
+}
+
+/*
+Small text
+===============================================================================
+*/
+.small-text {
+  justify-self: center;
+}
+
+/*
+Animations
+===============================================================================
+*/
+
+@keyframes hover--shadow {
+
+  to {
+    box-shadow: 0.5rem 0.5rem 0.75rem 0.125rem lighten($text-color, 66%);
+  }
+}
+
+@keyframes hover--button {
+
+  to {
+    color: $background-color;
+    background-color: $brand-color;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

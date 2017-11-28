@@ -1,0 +1,80 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+
+# Site settings
+# =============================================================================
+# These are used to personalize your site.
+title: CartoMetrics | Location Intelligence. # For example: "John Doe's blog"
+description: > # this means to ignore newlines until "baseurl:"
+  We provide location intelligence software to optimise your bussiness.
+language: es # The language of your site. This is mostly useful for search
+# engines and screen-readers,so they can quickly recognize your site language.
+attribution: true # If this is true, a small and unobtrusive text will appear at
+# the bottom of the page giving me credit. Thank you very much!! <3
+
+
+# User settings
+# =============================================================================
+# This is where the main data for the page resides. You can create any custom
+# variable you would like, and they will be accessible in the templates via
+# {{ site.myvariable }}.
+
+name: CartoMetrics # The name of your bussiness.
+logo: /assets/images/logo.png
+social: # Link to your social profiles. You have to put the entire uri fragment
+# of your user after the slash following the site e.g. "company/example", not
+# "example", for a profile in https://linkedin.com/company/example.
+  twitter: carto_metrics
+  github: cartometricsteam
+  linkedin: in/cartometrics-cartometrics-27205014b
+  instagram:
+  youtube:
+contact:
+  email: hello@cartometrics.com # Your email address. This is publicly visible,
+# so only put it if you are prepared to receive spam.
+  telephone: # Again, this is publicly visible.
+address:
+  country: ES # Two letter ISO 3166-1 alpha-2 country code.
+  region: MA # Your state / province, preferably in the ISO 3166-2 format.
+  locality: Málaga # Your city name
+  postal_code: 29003 # Your zip or postal code
+  street: Av de Sor Teresa Prat 15 # The entire street address.
+  pobox: # If you use a postal office box, put the number here.
+  coordinates: # Longitude and latitude (order is important!!) in WG84 system.
+  # If you include them, you will have an interactive map in the footer.
+    - -4.43916
+      36.69885
+product:
+  tagline: Life to your data # An attention grabbing slogan e.g: "Unlock the potential of your mind"
+  description: We turn your location data into a tool to help your bussiness. # The short and simple description of your product.
+  url: https://app.example.com # The url to acquire it.
+  demo: # Do you have a demo? If so, there is a "div" element called "demo"
+  # at the start of the document if you set this option to false or leave it
+  # blank. Use it to put an interactive demo!! If not, put the url to an image
+  # product.
+  features:
+    - name:
+      description:
+      logo:
+  price:
+
+# Build settings
+# =============================================================================
+# This settings affect the build process of your site, by adding plugins and
+# passing flags to jekyll.
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+permalink: /blog/:title/
+sass:
+  style: compressed
+plugins:
+   - jekyll-mentions
+   - jemoji
+   - jekyll-redirect-from
+   - jekyll-sitemap
+   - jekyll-feed

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*
+* Declare our main variables.
+===============================================================================
+*/
+
+/*
+Font variables
+*/
+$base-font-family: "Montserrat", sans !default;
+$min-font-size: 16 !default;
+$max-font-size: 21 !default;
+$base-font-weight: 400 !default;
+$min-scale-size: 600 !default;
+$max-scale-size: 900 !default;
+
+/*
+Color variables
+*/
+$text-color:       #2F2F2F !default;
+$light-text-color: lighten($text-color, 20%);
+$background-color: #fdfdfd !default;
+$brand-color:      #59AC64 !default;
+
+/*
+Size variables
+*/
+$content-width: 35rem !default;
+$margin: 1.25rem !default;
+
+/*
+Import partials.
+===============================================================================
+*/
+@import
+  "normalize",
+  "base",
+  "module"
+;

@@ -1,0 +1,35 @@
+<footer class="grid-container__footer">
+  <h2 class="h--centered" id="contact">Get in touch</h2>
+  <address class="flex-container flex-container--vertical">
+    {% if site.contact.email %}
+    <a class="" href="mailto:{{ site.contact.email | uri_escape }}">
+      <svg><use xlink:href="/assets/svg/icons.svg#mail"></use></svg>{{ site.contact.email }}
+    </a>
+    {% endif %}
+    {% if site.contact.telephone %}
+    <a class="" href="tel:{{ site.contact.telephone | uri_escape }}" >
+      <svg><use xlink:href="/assets/svg/icons.svg#phone"></use></svg> {{ site.contact.telephone }}
+    </a>
+    {% endif %}
+    {% if site.address %}
+    {% assign address = '' | split: '' | push: site.address.street | push: site.address.locality | push: site.address.region | push: site.address.postal_code | push: site.address.country %}
+    <a class="" href="https://maps.google.com/?q={{ address | join: ',' | cgi_escape }}">
+      {% if site.address.pobox %}
+        {% assign address = address | join: ', ' | append: ' (P.O. Box ' | append: site.address.pobox | append: ')' %}
+      {% endif %}
+      <svg><use xlink:href="/assets/svg/icons.svg#map-pin"></use></svg> {{ address | join: ', ' }}
+    </a>
+    {% endif %}
+    {% include social-profiles.html profiles=site.social %}
+  </address>
+  <small class="small-text">
+    <a href="/LICENSE.md" rel="license">License</a>
+    <a href="/sitemap.xml">Sitemap</a>
+  </small>
+  {% if site.attribution %}
+    <small class="small-text">
+      <a rel="nofollow" href="https://rubfergor.com"> Handcrafted by Rubén Fernández Gordillo</a>
+    </small>
+  {% endif %}
+
+</footer>

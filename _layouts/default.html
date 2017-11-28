@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ page.language | default: site.language | default: "en" }}">
+
+  {% include site__head.html %}
+
+  <body class="grid-container">
+    {% include site__header.html %}
+
+    <main class="grid-container__main">
+      {{ content }}
+    </main>
+
+    {% include site__footer.html %}
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js"></script>
+    <script src="/assets/js/app.js"></script>
+  </body>
+
+</html>
