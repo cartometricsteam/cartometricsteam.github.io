@@ -24,7 +24,7 @@ pabloarca:
 
 rubfergor:
   name: Rubén Fernández Gordillo
-  job: Full-Stack Developer, Co-founder
+  job: Full-Stack Developer
   image:
   description: > # this means to ignore newlines until "social:"
     I develop all the magic that make Cartometrics possible, from front to back.
@@ -44,7 +44,7 @@ daridoman:
   description: # Here
   # goes a bio. Keep it short and simple.
   social:
-    twitter:
+    twitter: daridoman
     github:
     linkedin: in/darío-gumiel-muñoz-5201b29a/
     facebook:
