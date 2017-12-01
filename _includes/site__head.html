@@ -1,5 +1,4 @@
 <head>
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | default: site.title }}</title>
@@ -11,6 +10,7 @@
   {% if page.next.url %}
     <link rel="next prefetch" href="{{ page.next.url }}" />
   {% endif %}
+  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
 
   <!-- Preload our styles and scripts -->
   <link rel="preload" href="/assets/css/style.css" as="style" type="text/css">
