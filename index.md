@@ -42,7 +42,7 @@ layout: default
 </section>
 
 <section id="team">
-  <h2 class="h--centered">Our team</h2>
+  <h2 class="h--centered">Our teammmmmmmmmmmmmm</h2>
   <ul class="flex-container flex-container--space-around">
     {% for author in site.data.authors %}
       <li>
