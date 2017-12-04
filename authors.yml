@@ -11,6 +11,7 @@ pabloarca:
   name: Pablo Arca
   job: CEO, Co-founder
   image:![pablo](/assets/images/fotoPablo.jpg){:class="img-responsive"}
+  image:![useful image]({{ site.url }}/assets/images/fotoPablo.jpg)
   description: # Here
   # goes a bio. Keep it short and simple.
   social:
