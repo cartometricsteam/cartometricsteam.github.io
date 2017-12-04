@@ -8,9 +8,10 @@
 # YOU WANT TO STAY PRIVATE.
 
 pabloarca:
-  name: Pablo Arca
+  name: Pablo 
   job: CEO, Co-founder
-  image:
+  image: image:![pablo](/assets/images/fotoPablo.jpg){:class="img-responsive"}
+  image:![useful image]({{ site.url }}/assets/images/fotoPablo.jpg)
   description: # Here
   # goes a bio. Keep it short and simple.
   social:
