@@ -38,20 +38,7 @@ rubfergor:
     youtube:
     url: https://rubfergor.com
 
-daridoman:
-  name: Darío Gumiel Muñoz
-  job: Data Analyst, Co-founder
-  image:
-  description: # Here
-  # goes a bio. Keep it short and simple.
-  social:
-    twitter: daridoman
-    github:
-    linkedin: in/darío-gumiel-muñoz-5201b29a/
-    facebook:
-    instagram:
-    youtube:
-    url:
+
 
 # - "@context": http://schema.org # Thou shalt not touch this
 #   "@id": "#author" # For internal reference in JSON-LD format. Do not modify it.
