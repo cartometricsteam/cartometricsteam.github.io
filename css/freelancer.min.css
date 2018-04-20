@@ -244,17 +244,18 @@ form .row:first-child .floating-label-form-group{
 .footer{
     padding-top:5rem;
     padding-bottom:5rem;
-    background-color:#2c3e50;
+    background-color:#333d47;
     color:#fff
 }
 .copyright{
-    background-color:#1a252f
+    background-color:#333d47
 }
-a{
-    color:#18bc9c
+a {
+  color: #333d47;
 }
-a:active,a:focus,a:hover{
-    color:#128f76
+
+a:focus, a:hover, a:active {
+  color: #455360;
 }
 .btn{
     border-width:0px;
@@ -270,7 +271,7 @@ a:active,a:focus,a:hover{
     color:#18bc9c!important
 }
 .text-secondary{
-    color:#2c3e50!important
+    color:#2f2f2f!important
 }
 .btn-primary{
     background-color:#669f64;

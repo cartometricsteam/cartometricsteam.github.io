@@ -32,7 +32,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Cartometrics</a>
+        <a>
+          <img id="logo" src="img/logoC.png" >
+        </a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -40,13 +42,14 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 " href="#contact">Proceso</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+
               <a class="nav-link py-3 px-0 px-lg-3 " href="#portfolio">Casos de estudio</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 " href="#about">About</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 " href="#contact">Contacto</a>
+              <a class="nav-link py-3 px-0 px-lg-3 " href="#about">Contacto</a>
             </li>
           </ul>
         </div>
@@ -59,8 +62,8 @@
         <div class="row">
 
           <div class="col-lg-6 col-md-6 col-sm-12" style=padding-left:30px;>
-            <h1 align="right">Dale vida a tus datos</h1>
-            <h2 align="right">Transformamos tus datos geolocalizados<br> en herramientas</h2>
+            <h1 align="right">CARTOMETRICS</h1>
+            <h2 align="right">Web maps y herramientas de<br>geolocalización </h2>
             <div class="text-right mt-4">
               <a class="btn btn-primary btn-xl" href="#">
                 Comencemos
@@ -75,17 +78,45 @@
       </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio">
+
+
+    <!-- QUE HACEMOS -->
+
+    <section id="contact">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Casos de estudio</h2>
-        <hr >
+        <h2 class="text-center text-uppercase text-secondary mb-0">PROCESO</h2>
+        <h3 class="text-center">Mejoramos la experiencia de usuario en el manejo de geodatos</h3>
+          <hr>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-8">
+              <img class="rounded mx-auto d-block"   src="img/bd.png" >
+              <h5 align="center">Bases de datos y cartografía al uso</h5>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8">
+              <img class="rounded mx-auto d-block"   src="img/flecha.png" >
+
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8">
+              <img class="rounded mx-auto d-block"   src="img/ordena.png" >
+              <h5 align="center">Visualización en dispositivos mediante herramientas y web maps</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio bg-primary text-white mb-0" id="portfolio">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white mb-0">Casos de estudio</h2>
+        <hr>
         <div class="row">
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item ">
 
               <img class="img-fluid" src="img/portfolio/sierraNieves.png" alt="">
-                <h4 align="center">Recomendador de rutas</h4>
+                  <h4 align="center"><a href="#">Recomendador de rutas</h4>
             </a>
           </div>
 
@@ -94,7 +125,8 @@
 
               <img class="img-fluid" src="img/portfolio/MalagaLuces.png" alt="">
 
-              <h4 align="center">Mapa para app MálagaLuces</h4>
+              <h4 align="center"><a href="#">Mapa para app MálagaLuces</a></h4>
+
             </a>
           </div>
 
@@ -104,22 +136,6 @@
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="about">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-white">About</h2>
-        <hr>
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando .</p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead"> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando .</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
 
 
 
@@ -152,8 +168,7 @@
           </div>
           <div class="col-md-4">
             <h4 class="text-uppercase mb-4">Contacto</h4>
-            <p class="lead mb-0">
-              <a href="http://startbootstrap.com">hello@cartometrics.com</a></p>
+            <p class="lead mb-0">hello@cartometrics.com</p>
           </div>
         </div>
       </div>
