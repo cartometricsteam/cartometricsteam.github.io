@@ -355,14 +355,15 @@ a:focus, a:hover, a:active {
   border-radius:15px;
 }
 
-@media only screen and(min-device-width:320px) and (max-device-width : 480px) {
-  #content-desktop {
-  display: inline;
-  }
-}
 
- @media only screen and(min-device-width:768px) and (max-device-width :1200px) {
-  #content-mobile {
-  display: inline;
-  }
-}
+/* FLECHA NORMAL SE VEA SOLO EN DESKTOP */
+
+
+
+  #content-desktop {display: inline;}
+
+  @media only screen
+   and (min-device-width : 320px)
+   and (max-device-width : 480px){
+    #content-desktop { display: none;}
+ }
