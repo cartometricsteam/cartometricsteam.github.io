@@ -356,14 +356,15 @@ a:focus, a:hover, a:active {
 }
 
 
-/* FLECHA NORMAL SE VEA SOLO EN DESKTOP */
 
+@media only screen  and (min-device-width: 578px) and (max-device-width: 3000px) {
+  #content-movil{
+    display: none;
+  }
+}
 
-
-  #content-desktop {display: inline;}
-
-  @media only screen
-   and (min-device-width : 320px)
-   and (max-device-width : 480px){
-    #content-desktop { display: none;}
- }
+@media only screen and (max-device-width: 576px) {
+  #content-desktop{
+    display: none;
+  }
+}

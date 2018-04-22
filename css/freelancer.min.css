@@ -5,6 +5,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight:100;
     font-family:Roboto;
     color:#2f2f2f !important;
+    margin-top: 30px;
 }
 
 section{
@@ -236,7 +237,7 @@ header.masthead h2{
     opacity:1
 }
 .floating-label-form-group-with-focus label{
-    color:#18bc9c
+    color:#669f64
 }
 form .row:first-child .floating-label-form-group{
     border-top:1px solid #e9ecef
@@ -244,8 +245,8 @@ form .row:first-child .floating-label-form-group{
 .footer{
     padding-top:5rem;
     padding-bottom:5rem;
-    background-color:#333d47;
-    color:#fff
+    background-color:#fff;
+
 }
 .copyright{
     background-color:#333d47
@@ -263,22 +264,30 @@ a:focus, a:hover, a:active {
 }
 .bg-primary{
     background-color:#669f64!important
+
 }
+
+a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
+    background-color: #333d47!important;
+}
+
+
 .bg-secondary{
     background-color:#669f64!important
 }
 .text-primary{
-    color:#18bc9c!important
+    color:#2f2f2f!important
 }
 .text-secondary{
     color:#2f2f2f!important
 }
 .btn-primary{
     background-color:#669f64;
+      margin-bottom: 30px;
 
 }
 .btn-primary:active,.btn-primary:focus,.btn-primary:hover{
-    background-color:#669f64;
+    background-color:#333d47!important;
 
 }
 .btn-secondary{
@@ -298,12 +307,28 @@ a:focus, a:hover, a:active {
 }
 
 
-/* FLECHA NORMAL SE VEA SOLO EN DESKTOP */
+#content-movil{
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
-  #content-desktop {display: inline;}
+}
 
-  @media only screen
-   and (min-device-width : 320px)
-   and (max-device-width : 480px){
-    #content-desktop { display: none;}
- }
+#content-desktop{
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+
+@media only screen  and (min-device-width: 578px) and (max-device-width: 3000px) {
+  #content-movil{
+    display: none;
+
+  }
+}
+
+@media only screen and (max-device-width: 576px) {
+  #content-desktop{
+    display: none;
+  }
+}
