@@ -136,7 +136,8 @@ header.masthead h2{
     }
 }
 .portfolio{
-    margin-bottom:-15px
+    margin-bottom:-15px;
+
 }
 .portfolio .portfolio-item{
     position:relative;
@@ -245,9 +246,10 @@ form .row:first-child .floating-label-form-group{
 .footer{
     padding-top:5rem;
     padding-bottom:5rem;
-    background-color:#fff;
-
+    background: url(../img/fondo1.png)!important;
+    background-size: 100% 100%;
 }
+
 .copyright{
     background-color:#333d47
 }
@@ -331,4 +333,11 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   #content-desktop{
     display: none;
   }
+}
+
+
+.rounded{
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
