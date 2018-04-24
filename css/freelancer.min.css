@@ -341,3 +341,15 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+
+.img-responsive{
+    display: block;
+    height: auto;
+    max-width: 100%;
+	  margin:0 auto;
+}
+
+.a{
+  color: #669f64;
+}
