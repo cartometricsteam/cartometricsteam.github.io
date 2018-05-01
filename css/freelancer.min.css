@@ -274,11 +274,11 @@ form .row:first-child .floating-label-form-group{
     background-color:#333d47
 }
 a {
-  color: #333d47;
+  color: #000042;
 }
 
 a:focus, a:hover, a:active {
-  color: #455360;
+  color: #1717d3;
 }
 .btn{
     border-width:0px;
@@ -290,7 +290,7 @@ a:focus, a:hover, a:active {
 }
 
 a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
-    background-color: #333d47!important;
+    background-color: #000042!important;
 }
 
 
@@ -395,7 +395,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 
 .parallax1 {
     /* The image used */
-    background-image: url('../img/landscape.jpg');
+    background-image: url('../img/landscape.png');
 
     /* Full height */
     height: 100%;
