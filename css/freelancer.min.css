@@ -406,3 +406,13 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+.proceso{
+
+    background: url(../img/fondoVA.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
