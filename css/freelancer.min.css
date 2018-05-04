@@ -416,3 +416,38 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
     -o-background-size: cover;
     background-size: cover;
 }
+
+
+.buttonGlow {
+  background: #4CAF50;
+  border: none;
+  border-radius: 25px;
+  color: snow; // Vanilla HTML color name
+  cursor: pointer;
+  font-size: 1.25em;
+  letter-spacing: .1em;
+  outline: none;
+  padding: .75em 2em;
+  position: relative; // Required for pseudo-element positioning
+  text-transform: uppercase;
+}
+
+.buttonGlow::before {
+    background: #4CAF50;
+    border-radius: inherit;
+    content: '';
+    filter: blur(10px); // Controls the extent of the initial glow
+    opacity: .75;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1; // Set behind primary button
+  }
+
+  .buttonGlow:hover::before {
+    filter: blur(20px); // Increases the extent of the glow on hover
+    opacity: 1;
+  }
