@@ -451,3 +451,15 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
     filter: blur(20px); // Increases the extent of the glow on hover
     opacity: 1;
   }
+
+
+
+  /* achicar logo para movil*/
+@media screen and (max-width: 768px) {
+
+.logo-c img, body.home.title-tagline-hidden.has-header-image .logo-c img, body.home.title-tagline-hidden.has-header-video .logo-c img {
+    max-width: 50%;
+    max-height: 30%;
+}
+
+}
