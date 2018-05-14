@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Incidencias de plagas</title>
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
+<style>
+  body {
+            margin:0;
+            padding: 0;
+        }
+        #map {
+            position: absolute;
+            top:4.6%;
+            bottom: 00;
+            width: 100%;
+        }
+h1 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #000000;
+  text-shadow: -1px 0 #7688a0, 0 1px #7688a0, 1px 0 #7688a0, 0 -1px #7688a0;
+  background-color: #3e5a4e;
+}
+
+.axis .domain {
+  display: none;
+}
+
+.axis .hover {
+  fill: #dc7464;
+}
+
+.legend {
+	line-height: 18px;
+	color: #333333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	padding: 6px 8px;
+	background: white;
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 5px;
+}
+
+.legend i {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 8px;
+	opacity: 0.7;
+}
+
+.legend img {
+	width: 18px;
+	height: 18px;
+	float: left;
+}
+
+.legend p {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0;
+}
+ </style>
+</head>
+
+<body>
+<h1 align="center">Denuncias por plagas en la ciudad de Málaga</h1>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<div id="map" ></div>
+<svg width="960" height="175"></svg>
+
+<script src="./capaIncid.json" type="text/javascript"></script>
+<script type="text/javascript">
+
+
+
+var map = L.map('map').setView([36.7277, -4.4328], 12);
+
+var basemap = L.tileLayer(
+'https://api.mapbox.com/styles/v1/cartometrics/cje8no3qvie7r2st9zhty9qjx/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2FydG9tZXRyaWNzIiwiYSI6ImNqOGJ2ZXIzazAxd3kyd3AyMDVrOGpzNWkifQ.KwvwFfoDOeLnjR1gEHO8tg').addTo(map);
+attribution: 'Designed by: Pablo Arca</a>';
+
+// Create Custom Icons Here
+var ratIcon = L.icon({
+	iconUrl: 'incidencias/rat.png',
+	iconSize: [19,19],
+	iconAnchor: [16,16],
+	popupAnchor: [0,-6]
+});
+
+var cockroachIcon = L.icon({
+	iconUrl: 'incidencias/cockroach.png',
+	iconSize: [19,19],
+	iconAnchor: [16,16],
+	popupAnchor: [0,-6]
+});
+
+var buildingIcon = L.icon({
+	iconUrl: 'incidencias/building.png',
+	iconSize: [19,19],
+	iconAnchor: [16,16],
+	popupAnchor: [0,-6]
+});
+
+var incidencias = L.geoJSON(capaIncid,
+{
+        onEachFeature: function (feature, layer) {
+            layer.bindPopup('Dirección: ' + feature.properties.DIRECCION + '</br>' + 'Fecha de registro:' + feature.properties.FECHA_REGISTRO + '</br>' + 'Tipo:' + feature.properties.TIPO);
+         },
+	pointToLayer: function (feature, latlng) {
+            if (feature.properties.TIPO=== "Roedores-Ratas"){
+                var marker = L.marker(latlng,{icon: ratIcon});
+            } else if (feature.properties.TIPO=== "Insectos-Cucarachas"){
+                var marker = L.marker(latlng,{icon: cockroachIcon});
+            } else {
+                var marker = L.marker(latlng,{icon: buildingIcon });
+            };
+        return marker;
+        }
+    }).addTo(map);
+
+// Create Leaflet Control Object for Legend
+		var legend = L.control({position: 'topright'});
+
+		// Function that runs when legend is added to map
+		legend.onAdd = function (map) {
+
+			// Create Div Element and Populate it with HTML
+			var div = L.DomUtil.create('div', 'legend');
+			div.innerHTML += '<b>Tipo de plaga:</b>';
+			div.innerHTML += '<br /><img src="incidencias/ratBlack.png">Ratas';
+			div.innerHTML += '<br /><img src="incidencias/cockroachBlack.png">Cucarachas';
+                        div.innerHTML += '<br /><img src="incidencias/buildingBlack.png">Colegios y edif. públicos(ratas y cucarachas)';
+
+			// Return the Legend div containing the HTML content
+			return div;
+		};
+
+		// Add Legend to Map
+		legend.addTo(map);
+
+
+L.control.scale({position: 'bottomleft'}).addTo(map);
+
+</script>
+
+
+
+</body>
+</html>
