@@ -35,7 +35,7 @@ section h2{
 }
 
 .container {
-    padding: 2px ;
+    padding: 0px ;
 }
 
 
@@ -65,8 +65,8 @@ section h2{
     line-height:3.1rem
 }
 #mainNav{
-    padding-top:1rem;
-    padding-bottom:1rem;
+    padding-top:0rem;
+    padding-bottom:0rem;
     font-weight:100;
     font-family:Roboto;
 
