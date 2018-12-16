@@ -1,485 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <head>
+        <title> Cartometrics</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Recopilamos, analizamos y representamos geodatos en aplicaciones de mapas para empresas, administraciones y smart cities">
+        <!--Core CSS -->
+        <link rel="stylesheet" href="assets/css/bulma.css">
+        <link rel="stylesheet" href="assets/css/demo.css">
 
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
 
-    <title>Cartometrics</title>
+        <!-- plugins -->
+        <link rel="stylesheet" type="text/css" href="assets/css/icons.min.css">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <!-- Pageloader -->
+        <div class="pageloader is-full is-demo"></div>
+        <div class="infraloader is-full is-active"></div>
+        <section class="hero is-fullheight is-demo">
+            <div class="hero-head">
 
+                <nav id="navbar-clone" class="navbar is-fixed">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a href="index.html" class="navbar-item">
+                                <img src="assets/images/logo/cartometrics.svg" alt="">
+                                <span class="brand-name">Cartometrics</span>
+                            </a>
+                            <span class="navbar-burger burger" data-target="cloneNavbarMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div id="cloneNavbarMenu" class="navbar-menu">
+                            <div class="navbar-end">
+                                <div class="navbar-item">
+                                    <a class="is-centered-responsive" href="#ejemplos" target="">Soluciones</a>
+                                </div>
+                                <div class="navbar-item">
+                                    <a class="is-centered-responsive" href="#demos" target="_blank">Proyectos</a>
+                                </div>
+                                <div class="navbar-item">
+                                    <a class="is-centered-responsive" href="#equipo" target="_blank">Equipo</a>
+                                </div>
+                                <div class="navbar-item">
+                                    <a href="contacto.html" class="button feather-button primary-button is-bold raised">Pedir demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
 
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386546-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-119386546-1');
-    </script>
-
-
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-      <div class="container">
-        <div class="logo-c">
-
-          <img id=""    src="img/logoC.png" >
-
-      </div>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 " href="#">Inicio</a>
-            </li>
-
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 " href="proyectos.html">Trabajos</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 " href="equipo.html">Equipo</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 " href="">Blog y noticias</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 " style="color:green" href="demo.html">Solicita una demo</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Header -->
-
-
-        <section class="parallax1">
-
-          <div class="row">
-              <div class="col-md-12 col-lg-12 col-xs-12">
-
-              <h1  class="text-center" style="padding-top:100px;  color:#ffffff!important">CARTOMETRICS</h1>
-              <h4 class="text-center" style=" color:#ffffff!important">Te ayudamos a transformar tus datos de localización en aplicaciones de mapas  a medida que aporten valor a tu organización o empresa</h4>
-              <div class="text-center" style="padding-top:20px">
-                  <a class="buttonGlow" href="equipo.html" style="color:#fff;text-decoration:none">Conócenos</a>
-              </div>
-                <p class="text-center" style="padding-bottom:120px; padding-top:30px; color:#ffffff!important">Nunca antes los geodatos habían tenido tanta importancia y ahora nosotros<br> te damos las herramientas para explotarlos.</hp>
-              </div>
+                <nav class="navbar is-light">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a href="index.html" class="navbar-item">
+                                <img src="assets/images/logo/nephos-white.svg" alt="">
+                                <span class="brand-name">Cartometrics</span>
+                            </a>
+                            <span class="navbar-burger burger" data-target="navbarMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div id="navbarMenu" class="navbar-menu">
+                            <div class="navbar-end">
+                                <div class="navbar-item">
+                                    <a class="is-centered-responsive" href="#ejemplos">Soluciones</a>
+                                </div>
+                                <div class="navbar-item">
+                                    <a class="is-centered-responsive" href="#demos" target="_blank">Proyectos</a>
+                                </div>
+                                <div class="navbar-item">
+                                    <a class="is-centered-responsive" href="#equipo" target="_blank">Equipo</a>
+                                </div>
+                                <div class="navbar-item">
+                                    <a href="contacto.html" class="button feather-button primary-button is-bold raised">Solicitar demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-          </div>
+            <div class="hero-body">
+              <!--  <canvas id="canvas"></canvas>-->
+                <div class="container has-text-centered">
+                    <div class="columns is-vcentered">
+                        <div class="column is-6">
+                            <figure class="image">
+                                <img src="assets/images/ui/movil_layers.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="column is-6">
+                            <h1 class="title is-1 is-light"><span class="typed-hero"></span></h1>
+                            <h2 class="subtitle is-5 is-light no-mb">
+                                Geosoluciones flexibles para Visores de mapas y Gestión de rutas.
+                            </h2>
+                            <br>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-foot">
+                <div class="container">
+                    <div class="tabs is-centered">
+                        <ul>
+                            <li><a href=""><img class="hero-logo" src="assets/images/brands/linkedin-logo.svg"></a></li>
+                            <li><a href="contacto.html"><img class="hero-logo"  src="assets/images/brands/mail-icon.svg"></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
 
 
-    <!--SKILLS -->
+<!-- COMO LO HACEMOSSSSSSSSSSSSSSSSSS-->
 
-    <section id="skills">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Nuestros pilares</h2>
 
-      <br>
 
-      <br>
-      <div class="container">
-    <div class="row">
-        <div class="col-lg-3 col-sm-3 col-md-3" style="padding-top:2rem; padding-left:2rem; padding-right:2rem; padding-bottom:2rem;">
-          <div class="card text-center" style="float:none; border-radius:20px; ">
-          <img class="rounded mx-auto d-block" style="display: block;  margin-left:auto; margin-right:auto;" src="img/webmap.png">
-          <div class="card-body">
-          <h5 class="card-title" style="margin-top:15px">Especificidad</h5>
-            <p class="card-text" style="margin-left:2.6rem;margin-right:2.6rem;margin-bottom:3rem;">Visualización y herramientas aplicadas a cada caso.</p>
+
+        <section id="start" class="section is-medium">
+            <div class="container">
+
+                <div class="title-wrapper has-text-centered">
+                    <div class="title is-3 is-spaced">
+                      Geoaplicaciones creativas
+                    </div>
+
+                    <div class="subtitle is-5 is-muted">Incluimos a nuestros clientes en todo el proceso de desarrollo para crear mapas
+                      acordes a sus necesidades y así liberar todo el potencial que aportan las herramientas de geolocalización.</div>
+
+                </div>
+
+                <div class="content-wrapper">
+                    <div class="columns is-multiline has-text-centered">
+
+                        <div class="column is-hidden-mobile"></div>
+
+                        <div class="column">
+                            <div class="icon-box">
+                                <div class="icon-wrapper is-feature-reveal">
+                                    <img src="assets/images/icons/demo/phone.svg">
+                                </div>
+                                <div class="box-content">
+                                    <div class="box-title">
+                                        Herramientas únicas
+                                    </div>
+                                    <div class="box-text">
+                                        Visualización y herramientas personalizadas a cada caso.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="column">
+                            <div class="icon-box">
+                                <div class="icon-wrapper is-feature-reveal">
+                                    <img src="assets/images/icons/demo/db.svg">
+                                </div>
+                                <div class="box-content">
+                                    <div class="box-title">
+                                        Enriquecimiento de datos
+                                    </div>
+                                    <div class="box-text">
+                                      Datos demográficos, ubicaciones de negocios, enrutamiento, geocodificación y otros conjuntos de datos listos para añadirlos a tu aplicación.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="column">
+                            <div class="icon-box">
+                                <div class="icon-wrapper is-feature-reveal">
+                                    <img src="assets/images/icons/demo/monitor.svg">
+                                </div>
+                                <div class="box-content">
+                                    <div class="box-title">
+                                        Multidispositivo
+                                    </div>
+                                    <div class="box-text">
+                                        Aplicaciones que se adaptan a diferentes dispositivos.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="column is-hidden-mobile"></div>
+                    </div>
+
+
+                </div>
             </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="col-lg-3 col-sm-3 col-md-3" style="padding-top:2rem; padding-left:2rem; padding-right:2rem; padding-bottom:2rem;">
-          <div class="card text-center" style="float:none; margin:0 auto;  border-radius:20px;">
-           <img class="rounded mx-auto d-block" style="display: block; height: auto; max-width: 100%; margin-left:auto; margin-right:auto" src="img/ux.png">
-          <div class="card-body">
-             <h5 class="card-title" style="margin-top:15px">UI y UX</h5>
-             <p class="card-text" style="margin-left:2.6rem;margin-right:2.6rem;margin-bottom:3rem;">HTML, CSS, JS, Mapbox GL, Leaflet y OL4, deck.gl.</p>
+
+
+
+<!-- EJEMPLOSSSS-->
+
+        <section id="ejemplos" class="section is-medium is-grey">
+            <div class="container">
+              <div class="title-wrapper has-text-centered">
+                  <div class="title is-3 is-spaced">
+                    No te los guardes, muéstralos
+                  </div>
+
+                  <div class="subtitle is-5 is-muted">Los mapas son capaces de revelar todo el potencial de los datos que suelen estar guardados en tablas y documentos.</div>
+
+              </div>
+
+                <div class="columns is-vcentered">
+                    <div class="column is-4 is-offset-2">
+                        <div class="feature-divider is-responsive-centered"></div>
+                        <h2 class="title is-4 is-responsive-centered">
+                            Visores
+                        </h2>
+                        <p class="is-muted is-responsive-centered">
+                           Para administraciones, organizaciones o empresas que necesiten mostrar al mundo los resultados de su labor para la sociedad.
+                        </p>
+                        <div class="cta-wrapper has-text-centered">
+                            <a href="contacto.html" target="_blank" class="button feather-button secondary-button is-bold raised">Saber más</a>
+                        </div>
+                    </div>
+
+                    <div class="column is-6 has-text-centered is-centered-tablet-portrait">
+                        <img class="is-featured" src="assets/images/ui/movil-visor.png" alt="">
+                    </div>
+                </div>
+
+                <div class="columns is-vcentered">
+                    <div class="column is-6 is-offset-1 is-hidden-mobile has-text-centered">
+                        <img class="is-featured" src="assets/images/ui/micro-interactions.png" alt="">
+                    </div>
+                    <div class="column is-4">
+                        <div class="feature-divider is-responsive-centered"></div>
+                        <h2 class="title is-4 is-responsive-centered">
+                            Gestión de rutas
+                        </h2>
+                        <p class="is-muted is-responsive-centered">
+                          Para planificar, programar y coordinar trayectos con rutas más rápidas y eficientes, ahorrando tiempo y esfuerzo.
+                        </p>
+                        <div class="cta-wrapper has-text-centered">
+                            <a href="contacto.html" target="_blank" class="button feather-button secondary-button is-bold raised">Saber más</a>
+                        </div>
+                    </div>
+                    <div class="column is-6 is-offset-1 is-hidden-desktop is-hidden-tablet is-centered-tablet-portrait">
+                        <img class="is-featured" src="assets/images/ui/rutas.png" alt="">
+                    </div>
+                </div>
+
+
             </div>
-          </div>
-        </div>
+        </section>
+
+<!--DEMOOOOS--
+        <section id="demos" class="section is-medium">
+            <div class="container">
+                <div class="title-wrapper has-text-centered">
+                    <div class="title is-3 is-spaced">
+                        Demos
+                    </div>
+                    <div class="subtitle is-5 is-muted"></div>
+
+                </div>
+
+                <div class="content-wrapper">
+                    <div class="columns is-multiline has-text-centered">
+                        <div class="column is-6">
+                            <img src="assets/images/ui/app/nephos.png" alt="">
 
 
-        <div class="col-lg-3 col-sm-3 col-md-3" style="padding-top:2rem; padding-left:2rem; padding-right:2rem; padding-bottom:2rem;">
-          <div class="card text-center" style=" float:none; margin:0 auto;  border-radius:20px;">
-         <img class="rounded mx-auto d-block" style="display: block; height: auto; max-width: 100%; margin-left:auto; margin-right:auto" src="img/layers.png">
-          <div class="card-body">
-            <h5 class="card-title" style="margin-top:15px">Datos geoespaciales</h5>
-             <p class="card-text" style="margin-left:2.6rem;margin-right:2.6rem;margin-bottom:1.6rem;">Tratamiento de SHP, CSV, GEOJSON, atributos y entidades.</p>
+                            <div class="link-wrap">
+                                <div class="stroke-wrapper">
+                                    <a class="animated-button" href="home.html" target="_blank">
+                                        <svg height="40" width="210" xmlns="http://www.w3.org/2000/svg">
+                                            <rect class="shape" height="40" width="210"></rect>
+                                        </svg>
+                                        <div class="text">Slider Homepage</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="column is-6">
+                            <img src="assets/images/ui/app/nephos-alt.png" alt="">
+
+
+                            <div class="link-wrap">
+                                <div class="stroke-wrapper">
+                                    <a class="animated-button" href="home-alt.html" target="_blank">
+                                        <svg height="40" width="210" xmlns="http://www.w3.org/2000/svg">
+                                            <rect class="shape" height="40" width="210"></rect>
+                                        </svg>
+                                        <div class="text">Image Homepage</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <img src="assets/images/ui/app/categories.png" alt="">
+
+
+                            <div class="link-wrap">
+                                <div class="stroke-wrapper">
+                                    <a class="animated-button" href="shop.html" target="_blank">
+                                        <svg height="40" width="210" xmlns="http://www.w3.org/2000/svg">
+                                            <rect class="shape" height="40" width="210"></rect>
+                                        </svg>
+                                        <div class="text">Shop Categories</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <img src="assets/images/ui/app/auth.png" alt="">
+
+
+                            <div class="link-wrap">
+                                <div class="stroke-wrapper">
+                                    <a class="animated-button" href="authentication.html" target="_blank">
+                                        <svg height="40" width="210" xmlns="http://www.w3.org/2000/svg">
+                                            <rect class="shape" height="40" width="210"></rect>
+                                        </svg>
+                                        <div class="text">Authentication</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
+        </section>
 
-
-        <div class="col-lg-3 col-sm-3 col-md-3" style="padding-top:2rem; padding-left:2rem; padding-right:2rem; padding-bottom:2rem;">
-          <div class="card text-center" style=" float:none; margin:0 auto;  border-radius:20px;">
-          <img class="rounded mx-auto d-block" style="display: block; height: auto; max-width: 100%; margin-left:auto; margin-right:auto" src="img/pico.png">
-          <div class="card-body">
-             <h5 class="card-title" style="margin-top:35px">Minería de geodatos</h5>
-             <p class="card-text" style="margin-left:2.6rem;margin-right:2.6rem;margin-bottom:3rem;">Conexión con API's de Google y RRSS.</p>
-            </div>
-          </div>
-        </div>
-          </div>
+-->
 
 
 
+        <section class="section is-medium is-grey is-relative">
+             <div class="container">
 
-
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-6 col-sm-3">
-            <h5 align="center">Experiencia</h5>
-              <div align="center">
-              <a  href="equipo.html"><img class="img-responsive"  src="img/experience.png" ></a>
-            </div>
-            </div>
-      </div>
-    </div>
-
-    </section>
-
-
-
-
-
-    <!--SERVICIOS-->
-  <hr>
-    <section id="oferta">
-      <div class="container-fluid">
-        <h2 class="text-center text-uppercase text-secondary mb-0">SERVICIOS</h2>
-        <h4 class="text-center" style="padding-bottom:5rem">Precios SaaS. Procesa, descubre y monetiza pagando sólo por lo que utilices<br> sin preocuparte de la seguridad y el mantenimiento de tu aplicación.</h4>
-
-            <div class="row">
-              <div class="col-lg-6 col-sm-6">
-              <h5 align="center">Análisis y estudios previos a la representación de datos</h5>
-
-              <p align="center" style="color:#7f7f7f">¿Necesitas sacar conclusiones
-                                previas de tu aplicación de mapas antes de su representación?
-                                No te preocupes, tenemos amplia experiencia
-                                en análisis de datos mediante GIS y R.🤙<br>
-
-                              </p>
-                                <p align="center" style="color:#7f7f7f">
-                                  <strong>- Análisis estadísticos mediante R
-                                    <br>
-                                - Análisis GIS &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <br>
-                                - Análisis de localización &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp<br>
-                                - Geoenriquecimiento de Datos  &nbsp &nbsp<br>
-                                - Geodata mining &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</strong><br>
-
-                                </p>
-
-
-                                 <div class="text-center">
-                                 <a class="btn btn-primary btn-xl" href="demo.html">
-                                   Saber más
-                                 </a>
+                 <div class="content-wrapper">
+                     <div class="columns is-vcentered">
+                         <div class="column is-5 is-offset-1 is-on-top">
+                             <div class="feature-divider is-responsive-centered"></div>
+                             <h2 class="title is-4 is-responsive-centered">
+                                 Contáctanos
+                             </h2>
+                             <p class="is-muted has-padding-bottom is-responsive-centered">¿Te interesaría saber cómo podemos ayudarte a sacar el máximo partido a tus geodatos?</p>
+                             <div class="is-responsive-centered is-title-reveal">
+                                 <a href="contacto.html" target="_blank" class="button feather-button primary-button is-bold raised is-responsive-centered">Pincha aquí</a>
                              </div>
-              </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
 
+             <img class="is-ui is-hidden-mobile" src="assets/images/ui/contact.png">
 
-                <div class="col-lg-6 col-sm-6">
-
-                    <img class="img-responsive" align="right"   src="img/analisis.png" >
-                </div>
-
-                </div>
-
-                <p>
-
-                  <div class="row">
-                    <p>
-                  </div>
-                  <div class="row">
-                    <p>
-                  </div>
-
-<hr>
-        <div class="row">
-
-            <div class="col-lg-6 col-sm-6">
-
-                <img class="img-responsive" align="left"   src="img/devices.png" >
-            </div>
-                <div class="col-lg-6 col-sm-6">
-                <h5 align="center"> Representación de datos en mapas web para cualquier dispositivo</h5>
-                <p align="center" style="color:#7f7f7f">Después de tratar los datos, realizar estudios<br>
-                                  y todo lo necesario para que tu aplicación cumpla sus objetivos, podrás publicar y visualizar tu mapa en cualquiera de
-                                  los dispositivos. Ya sea móvil, tablet u ordenador de escritorio.</p>
-
-                                  <p align="center" style="color:#7f7f7f">
-                                    <strong>- Postgis (PostgreSQL)&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <br>
-                                  - Geoserver &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br>
-                                  - OpenLayers4, Leaflet, Turf.js &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br>
-                                  - Mapbox.gl y Deck.gl &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br>
-                                  </strong><br>
-
-                                  </p>
-                                   <div class="text-center">
-                                   <a class="btn btn-primary btn-xl" href="demo.html">
-                                     Saber más
-                                   </a>
-                               </div>
-                </div>
-            </div>
-<hr>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
+         </section>
 
 
 
-                  <a href="data-mining.html" style="text-decoration: none"><img  class="button1" src ='img/minning.png' style="display:block; margin:auto; padding-top:30px;"/></a>
-                  <p class="text-center" style="padding-top:30px">Los datos son la base para realizar cualquier análisis o representación en un mapa y nosotros sabemos como <b>obtenerlos.🧐</p>
-                  <p class="text-center"><b>Conexión</b> con la API de Google, de Foursquare, de redes sociales y administraciones públicas.</p>
+        <section id="equipo" class="section is-medium is-grey">
+            <div class="container">
 
-
-
-                  <p>
-              </div>
-
-              </div>
-            <div class="text-center" style="padding-top:20px">
-                <a  class="buttonGlow" href="data-mining.html" style="color:#fff;">Geodata mining</a>
-            </div>
-        </div>
-      </div>
-
-    </section>
-
-
-  <!--CLIENTES-->
-<section class="proceso">
-
-  <div class="row">
-    <div class="col-md-12 col-gl-12 col-sm-6">
-      <h2 class="text-center" style="color:#fff!important"> CLIENTES </h2>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6">
-      <a href="demo.html" style="text-decoration: none"><h5 class="text-left" style="color:#fff!important; padding-left:20px;"><img src = 'img/rocket.png' style="vertical-align: bottom; padding-right:15px; opacity: 0.5;" />PARA EMPRESAS</h5></a>
-      <P style="color:#fff!important; padding-left:20px;">Campañas de geomarketing, estudios espaciales de mercado<br> y análisis de emplazamiento. Minería de geodatos.</p>
-    </div>
-
-  </div>
-
-  <div class="row">
-    <div class="col-md-12">
-      <a href="demo.html" style="text-decoration: none"><h5 class="text-center" style="color:#fff!important;"> <img src = 'img/admin.png' style="vertical-align: bottom; padding-right:15px;opacity: 0.5;" />PARA ADMINISTRACIONES</h5></a>
-
-      <P class="text-center" style="color:#fff!important;"> Desarrollo de soluciones para visualización de geodatos tanto para los propios<br> técnicos de la administración como para los ciudadanos.</p>
-    </div>
-
-  </div>
-
-
-  <div class="row">
-    <div class="col-md-12">
-      <a href="demo.html" style="text-decoration: none"><h5 class="text-right" style="color:#fff!important; padding-left:20px; padding-right:20px;"> <img src = 'img/bulb.png' style="vertical-align: bottom; padding-right:15px;opacity: 0.5;"/>PARA SMART CITIES</h5></a>
-        <p class="text-right" style="color:#fff!important;  padding-right:20px;">Visores cartográficos para visualizar, medir y analizar sensores <br>dispuestos en el espacio.</p>
-    </div>
-
-  </div>
-
-  <div class="row">
-    <div class="col-md-12">
-
-        <p class="text-left" style="color:#fff!important;  padding-left:20px; padding-top:20px">"Cada <u>cliente</u> tiene unos problemas y unas necesidades específicas, y nuestra labor es responder a ellas mano a mano con nuestros clientes".</p>
-    </div>
-
-  </div>
-
-</section>
-
-
-
-
-
-    <!-- CASOS DE ESTUDIO -->
-
-    <section class="proyectos">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Trabajos</h2>
-        <h3 class="text-center">Busca nuestros últimos proyectos y estudios</h3>
-      </div>
-
-<br>
-      <div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-sm-4 col-md-4" style="padding-top:2rem; padding-left:2rem; padding-right:2rem; padding-bottom:2rem;">
-          <div class="card text-center" style="float:none;   border-radius:20px;">
-
-            <a href="recomendador.html"><img class="img-responsive" style=" border-radius:20px" src="img/portfolio/sierraNieves.png"></a>
-          <div class="card-body">
-            <a href="recomendador.html"><h5 class="card-title" style="margin-top:15px;margin-bottom:35px;">Recomendador de rutas en Sierra de las Nieves</h5></a>
-
-            </div>
-          </div>
-        </div>
-
-
-
-          <div class="col-lg-4 col-sm-4 col-md-4" style="padding-top:2rem; padding-left:2rem; padding-right:2rem; padding-bottom:2rem;">
-            <div class="card text-center" style="float:none;   border-radius:20px;">
-            <a href="luce.html"><img class=" img-responsive" style=" border-radius:20px;" src="img/portfolio/MalagaLuce.png"></a>
-            <div class="card-body">
-            <a href="luce.html"><h5 class="card-title" style="margin-top:15px;margin-bottom:60px;">Mapa para app Málaga Luce</h5></a>
-
-              </div>
-            </div>
-          </div>
-
-
-
-            <div class="col-lg-4 col-sm-4 col-md-4" style="padding-top:2rem; padding-left:2rem; padding-right:2rem; padding-bottom:2rem;">
-              <div class="card text-center" style="float:none;   border-radius:20px;">
-              <a href="colaborativo.html"><img class=" img-responsive" style=" border-radius:20px;" src="img/portfolio/catastro.png"></a>
-              <div class="card-body">
-              <a href="colaborativo.html"><h5 class="card-title" style="margin-top:15px">Visor de parcelas catastrastrales por año de construcción en Málaga</h5></a>
+                <div class="title-wrapper has-text-centered">
+                    <div class="title is-3 is-spaced">
+                        Equipo
+                    </div>
+                    <div class="subtitle is-5 is-muted"></div>
 
                 </div>
-              </div>
+
+                <div class="content-wrapper">
+                    <div class="columns has-text-centered">
+                        <div class="column is-hidden-mobile"></div>
+
+                        <div class="column is-3">
+                            <div class="ball levitate has-version">
+                                <img src="assets/images/brands/pablo.svg">
+                                <div class="v-indicator">P</div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="ball levitate has-version">
+                                <img src="assets/images/brands/ruben.svg">
+                                <div class="v-indicator">R</div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="ball levitate has-version">
+                                <img src="assets/images/brands/carmen.svg">
+                                <div class="v-indicator">C</div>
+                            </div>
+                        </div>
+
+                        <div class="column is-hidden-mobile"></div>
+                    </div>
+
+
+                </div>
             </div>
-          </div>
+        </section>
 
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-flex">
+                    <div class="nephos">
+                        <img class="logo" src="assets/images/logo/cartometrics-white.svg">
+                        <span class="logo-text">Cartometrics</span>
+                    </div>
+                    <p class="is-muted  is-responsive-centered" style="color:white!important">Av de Sor Teresa Prat 15 Málaga, MA, 29003, ES</p>
+                    <p class="is-muted  is-responsive-centered" style="color:white!important">+34 628 11 98 17</p>
 
-          <div class="col-lg-12 col-md-12 col-sm-3">
-            <div class="text-right" style="padding-top:14px;">
-            <a class="btn btn-primary btn-xl" href="proyectos.html">
-              Ver más
-            </a>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-
-
-  <!-- COLABORACIONES-->
-<hr>
-  <div class="container" style="padding-bottom:50px;">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Entidades colaboradoras</h2>
-        <div class="row">
-          <div class="col-md-3 col-lg-3 col-sm-3">
-            <img class="img-fluid" src="img/recursos.png" style="padding-top:50px;" alt="https://www.uma.es/rce/info/107551/catedra-de-recursos-geotecnologicos-para-la-economia-y-la-sociedad/">
-          </div>
-          <div class="col-md-3 col-lg-3 col-sm-3">
-            <img class="img-fluid rounded" src="img/polo.png"  alt="">
-          </div>
-          <div class="col-md-3 col-lg-3 col-sm-3">
-            <img class="img-fluid rounded" src="img/promalaga.png"  alt="">
-          </div>
-          <div class="col-md-3 col-lg-3 col-sm-3">
-            <img class="img-fluid rounded" src="img/link.png"  alt="">
-          </div>
-        </div>
-
-
-  </div>
-
-
-    <!-- FOOTER -->
-
-    <footer class="footer text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4" style="color:#fff!important">Localización</h4>
-            <p style="color:#000000">Av de Sor Teresa Prat 15
-              <br>Málaga, MA, 29003, ES</p>
-          </div>
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4" style="color:#fff!important">Redes sociales</h4>
-            <ul class="list-inline mb-0">
-
-
-              <li class="list-inline-item">
-                <a class="btn  btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn  btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-linkedin"></i>
-                </a>
-              </li>
-
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-uppercase mb-4" style="color:#fff!important">Contacto</h4>
-            <p style="color:#000000">admin@cartometrics.com</p>
-            <p style="color:#000000">+34 628 11 98 17</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-to-top d-lg-none position-fixed ">
-      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-      </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-
-
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-
-
-    <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
-
-
-  </body>
-
+                </div>
+            </div>
+        </footer>        <!-- Concatenated plugins -->
+        <script src="assets/js/app.js"></script>
+        <!-- Helios demo js -->
+        <script src="assets/js/demo.js"></script>    </body>
 </html>
