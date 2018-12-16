@@ -44,7 +44,7 @@ $(document).ready(function() {
 
     //Typed js
     var typed = new Typed('.typed-hero', {
-        strings: ["Bienvenidos a Cartometrics ^2000", " transformamos datos geolocalizados en aplicaciones de mapas que aportan valor a tu organización o empresa. ^2000"],
+        strings: ["Bienvenidos a Cartometrics ^2000", "donde transformamos tus datos en aplicaciones de mapas. ^2000"],
         typeSpeed: 45,
         loop: true,
         loopCount: Infinity,
