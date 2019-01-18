@@ -80,42 +80,43 @@
                                             <!-- Tabs -->
 
                                             <!-- Login form -->
-                                            <div id="login" class="navtab-content is-active">
-                                                <form>
+                                            <div id="" class="navtab-content is-active">
+                                                <form id="contactform"  method="POST">
+
                                                   <!-- Form Control -->
                                                   <div class="control">
                                                       <label class="auth-label">Nombre*</label>
-                                                      <input type="email" class="input" placeholder="">
+                                                      <input type="text" name="nombre" class="input" placeholder="">
                                                   </div>
                                                   <!-- Form Control -->
                                                   <div class="control">
                                                       <label class="auth-label">Apellidos*</label>
-                                                      <input type="email" class="input" placeholder="">
+                                                      <input type="text" name="apellidos" class="input" placeholder="">
                                                   </div>
                                                   <!-- Form Control -->
                                                   <div class="control">
                                                       <label class="auth-label">Email de empresa*</label>
-                                                      <input type="email" class="input" placeholder="">
+                                                      <input type="email" name="email" class="input" placeholder="">
                                                   </div>
                                                   <!-- Form Control -->
                                                   <div class="control">
                                                       <label class="auth-label">Nombre de empresa*</label>
-                                                      <input type="email" class="input" placeholder="">
+                                                      <input type="text" name="nombre empresa" class="input" placeholder="">
                                                   </div>
                                                   <!-- Form Control -->
                                                   <div class="control">
                                                       <label class="auth-label">Teléfono*</label>
-                                                      <input type="email" class="input" placeholder="">
+                                                      <input type="text" name="telefono" class="input" placeholder="">
                                                   </div>
                                                   <!-- Form Control -->
                                                   <div class="control">
                                                       <label class="auth-label">País*</label>
-                                                      <input type="email" class="input" placeholder="">
+                                                      <input type="text" name="pais" class="input" placeholder="">
                                                   </div>
                                                   <!-- Form Control -->
                                                   <div class="control">
                                                       <label class="auth-label">Consulta</label>
-                                                      <input type="email" class="input" placeholder="">
+                                                      <input type="text" name="consulta" class="input" placeholder="">
                                                   </div>
                                                     <!-- Form Control -->
                                                     <div class="control">
@@ -132,13 +133,18 @@
                                                     </div>
                                                     <!-- Form Submit -->
                                                     <div class="button-wrapper">
-                                                        <button type="submit" class="button feather-button is-small primary-button upper-button raised">
+                                                        <button type="submit" value="Send" class="button feather-button is-small primary-button upper-button raised">
                                                             <span>Enviar</span>
                                                         </button>
 
 
                                                     </div>
                                                 </form>
+
+                                                <script>
+                                                    var contactform =  document.getElementById('contactform');
+                                                    contactform.setAttribute('action', '//formspree.io/' + 'contact' + '@' + 'cartometrics' + '.' + 'com');
+                                                </script>
                                             </div>
 
                                         </div>
