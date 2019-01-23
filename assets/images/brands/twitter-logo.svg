@@ -89,7 +89,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="387.17982"
+     inkscape:cx="155.03696"
      inkscape:cy="14.751227"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -125,7 +125,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -195,14 +195,7 @@
        y="284.80927"
        x="242.56522"
        id="image4550"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
-AAAItgAACLYBqZXwLQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAD/SURB
-VCiR1c+xSgNREIXhf+7dxAhWoraKiDaLtimsBJuUlhGCiVa+gTa+STQKKohPYOEbSJQoSBBiinQK
-KpLo7t6xcJVt3GzrqYY5fDAjfrmxC7oDNINCVLqvb76RISZGY8BybmBWs6AYchnPL57jKjOc6E2v
-OWeKn5qfa55WO1mh+Ov7NVEzCeAFUb0/al0uZAvAKU+FcHD2kR/ZFqcLCA/Os43bw0pX/PLBNbAI
-gMoSTgKsuwNQ6Ai8/vbfeY7Qopd6DswAIdAGZgELjFtkzwx5RVEttY435hVqif1KKlR4bJ1ULwCs
-NeeJaioVitD/mW+OKu+Jyg479c/8I/gFw8NPBv4ibC8AAAAASUVORK5CYII=
-"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz AAAItgAACLYBqZXwLQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAD/SURB VCiR1c+xSgNREIXhf+7dxAhWoraKiDaLtimsBJuUlhGCiVa+gTa+STQKKohPYOEbSJQoSBBiinQK KpLo7t6xcJVt3GzrqYY5fDAjfrmxC7oDNINCVLqvb76RISZGY8BybmBWs6AYchnPL57jKjOc6E2v OWeKn5qfa55WO1mh+Ov7NVEzCeAFUb0/al0uZAvAKU+FcHD2kR/ZFqcLCA/Os43bw0pX/PLBNbAI gMoSTgKsuwNQ6Ai8/vbfeY7Qopd6DswAIdAGZgELjFtkzwx5RVEttY435hVqif1KKlR4bJ1ULwCs NeeJaioVitD/mW+OKu+Jyg479c/8I/gFw8NPBv4ibC8AAAAASUVORK5CYII= "
        preserveAspectRatio="none"
        height="6.2385964"
        width="6.2385964" />
