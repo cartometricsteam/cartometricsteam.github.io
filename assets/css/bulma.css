@@ -5729,7 +5729,7 @@ a.tag:hover {
 	background-color: #fff;
 	box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
 	color: #4a4a4a;
-	max-width: 100%;
+	max-width: 20%;
 	position: relative
 }
 
@@ -10587,7 +10587,7 @@ print {
 
 @media screen and (min-width: 1088px) {
 	.section.is-medium {
-		padding: 
+		padding:
 	}
 	.section.is-large {
 		padding: 18rem 1.5rem
