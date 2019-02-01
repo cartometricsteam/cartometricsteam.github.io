@@ -4,10 +4,10 @@
 
 
     <meta charset='utf-8' />
-    <title>La Málaga Vieja</title>
+    <title>Parcelas Sevilla ciudad</title>
 
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
     <style>
       body {
   margin: 0;
@@ -58,7 +58,7 @@ p {
 #features {
   top: 0;
 
-  height: 80px;
+  height: 90px;
   margin-top: 20px;
   width: 480px;
 }
@@ -83,11 +83,21 @@ p {
 
 
     </style>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131719868-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131719868-1');
+    </script>
 </head>
 <body>
 
 <div id='map'></div>
-<div class='map-overlay' id='features'><h2>Parcelas catastrales por año de construcción</h2><div id='pd'><p>Fuente: Catastro</p></div></div>
+<div class='map-overlay' id='features'><h2>Parcelas catastrales por año de construcción en Sevilla ciudad</h2><div id='pd'><p>Fuente: Catastro Inspire</p></div></div>
 <div class='map-overlay' id='legend'></div>
 
 
