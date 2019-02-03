@@ -4,10 +4,10 @@
 
 
     <meta charset='utf-8' />
-    <title>Parcelas Málaga ciudad</title>
+    <title>Parcelas Barcelona ciudad</title>
 
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
     <style>
       body {
   margin: 0;
@@ -87,6 +87,7 @@ p {
 
 
 </head>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131719868-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -95,10 +96,11 @@ p {
 
   gtag('config', 'UA-131719868-1');
 </script>
+
 <body>
 
 <div id='map'></div>
-<div class='map-overlay' id='features'><h2>Parcelas catastrales por año de construcción en Málaga ciudad</h2><div id='pd'><p>Fuente: Catastro Inspire<br>Autor: <a href="http://cartometrics.com/">Cartometrics</a></p></div></div>
+<div class='map-overlay' id='features'><h2>Parcelas catastrales por año de construcción en Barcelona ciudad</h2><div id='pd'><p>Fuente: Catastro Inspire<br>Autor: <a href="http://cartometrics.com/">Cartometrics</a></p></div></div>
 <div class='map-overlay' id='legend'></div>
 
 
@@ -107,8 +109,8 @@ p {
 mapboxgl.accessToken = 'pk.eyJ1IjoiY2FydG9tZXRyaWNzIiwiYSI6ImNqOGJ2ZXIzazAxd3kyd3AyMDVrOGpzNWkifQ.KwvwFfoDOeLnjR1gEHO8tg';
 var map = new mapboxgl.Map({
     container: 'map', // container id
-    style: 'mapbox://styles/cartometrics/cj9iau8enap8k2rmocf4a4m3r', // stylesheet location
-    center: [-4.428290, 36.720402], // starting position [lng, lat]
+    style: 'mapbox://styles/cartometrics/cjrp8tsogdpca2smypida5r1t', // stylesheet location
+    center: [2.1941, 41.397800], // starting position [lng, lat]
     zoom: 12 // starting zoom
 });
 
