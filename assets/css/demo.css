@@ -1244,7 +1244,8 @@ canvas {
 }
 
 .section.is-grey {
-    background: #fcfcfc
+    background: #f4f4f4;
+
 }
 
 .section.is-relative {
