@@ -1253,13 +1253,14 @@ canvas {
 }
 
 .section img.is-featured {
-    max-height: 450px
+    max-height: 600px
 }
 
 .section img.is-featured-sponsors {
     max-height: 50px;
     padding-left: 5px;
     padding-right: 5px;
+    margin-top:1px;
 }
 
 .section img.is-ui {
