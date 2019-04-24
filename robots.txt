@@ -3,4 +3,5 @@ Disallow: https://www.cartometrics.com/proyectos.html
 Disallow: https://www.cartometrics.com/equipo.html
 Disallow: https://www.cartometrics.com/luce.html
 Disallow: https://www.cartometrics.com/demo.html
+
 Sitemap: http://cartometrics.com/sitemap.xml
