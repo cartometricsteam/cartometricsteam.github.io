@@ -175,23 +175,36 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.12374369"
-     inkscape:cx="596.52083"
-     inkscape:cy="1430.9012"
+     inkscape:cx="-953.77314"
+     inkscape:cy="1107.6524"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      width="1535mm"
      inkscape:window-width="1366"
      inkscape:window-height="705"
-     inkscape:window-x="1672"
-     inkscape:window-y="601"
+     inkscape:window-x="-8"
+     inkscape:window-y="687"
      inkscape:window-maximized="1"
      inkscape:pagecheckerboard="true"
      inkscape:snap-global="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="-1137.4991,431.90754"
+       orientation="0,1"
+       id="guide4560"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-784.70331,780.42699"
+       orientation="1,0"
+       id="guide4562"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -200,7 +213,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -209,6 +222,18 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-863.14151,1204.941)">
+    <rect
+       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.09999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4558"
+       width="647.86127"
+       height="718.42041"
+       x="-246.56158"
+       y="-1342.2684"
+       rx="2.6458333"
+       ry="1.8077418"
+       inkscape:export-filename="C:\Users\Pablo\Documents\GitHub\cartometricsteam.github.io\assets\images\cartometrics.png"
+       inkscape:export-xdpi="15.679951"
+       inkscape:export-ydpi="15.679951" />
     <circle
        style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:3.9000001;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
        id="path4674-7"
@@ -233,17 +258,17 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:64.77000427px;line-height:1.25;font-family:Datalegreya;-inkscape-font-specification:'Datalegreya, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="-0.12407684"
-       y="-562.82159"
+       x="192.30998"
+       y="-400.32172"
        id="text4502"><tspan
          sodipodi:role="line"
          id="tspan4504"
-         x="-0.12407684"
-         y="-562.82159">Construyendo un mundo</tspan><tspan
+         x="192.30998"
+         y="-400.32172">Construyendo un mundo</tspan><tspan
          sodipodi:role="line"
          id="tspan4506"
-         x="-0.12407684"
-         y="-481.8591">más eficiente</tspan></text>
+         x="192.30998"
+         y="-319.35922">más eficiente</tspan></text>
     <rect
        style="opacity:1;vector-effect:none;fill:url(#linearGradient9442);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.10000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.37681197"
        id="rect9291"
@@ -398,13 +423,13 @@
       </g>
     </g>
     <g
-       transform="matrix(2.0462213,0,0,-2.0462213,-320.84479,-614.82925)"
+       transform="matrix(2.0462213,0,0,-2.0462213,-280.21982,-651.17791)"
        inkscape:label="Imagotipo"
        id="g4610-5"
        style="fill:#243764;fill-opacity:1;stroke-width:0.17240448"
-       inkscape:export-filename="C:\Users\Pablo\Desktop\cartoMetrics\WEB\BULMA\nephos-html\assets\images\favicon.png"
-       inkscape:export-xdpi="73.496773"
-       inkscape:export-ydpi="73.496773">
+       inkscape:export-filename="C:\Users\Pablo\Documents\GitHub\cartometricsteam.github.io\assets\images\cartometrics.png"
+       inkscape:export-xdpi="15.679951"
+       inkscape:export-ydpi="15.679951">
       <g
          id="g4612-3"
          style="fill:#243764;fill-opacity:1;stroke-width:0.17240448">
@@ -456,5 +481,19 @@
         </g>
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:71.48377228px;line-height:1.25;font-family:Carlito;-inkscape-font-specification:'Carlito, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#243764;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="-153.58687"
+       y="-651.2785"
+       id="text4566"
+       inkscape:export-filename="C:\Users\Pablo\Documents\GitHub\cartometricsteam.github.io\assets\images\cartometrics.png"
+       inkscape:export-xdpi="15.679951"
+       inkscape:export-ydpi="15.679951"><tspan
+         sodipodi:role="line"
+         id="tspan4564"
+         x="-153.58687"
+         y="-651.2785"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:71.48377228px;font-family:Carlito;-inkscape-font-specification:'Carlito, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332;fill:#243764;fill-opacity:1;">CARTOMETRICS</tspan></text>
   </g>
 </svg>
