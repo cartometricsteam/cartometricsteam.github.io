@@ -7474,10 +7474,11 @@ a {
     color: #0023ff
 }
 
-.section .section-background-image  {
-        background: url(../assets/images/blog/mine.png);
+.section-background-image  {
+        background: url(http://cartometrics.com/assets/land.png);
         no-repeat center;
         background-size: cover;
+
 
        }
 
