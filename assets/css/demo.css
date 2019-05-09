@@ -1248,6 +1248,10 @@ canvas {
 
 }
 
+.section.is-white{
+  background: #fff;
+}
+
 .section.is-relative {
     position: relative
 }
