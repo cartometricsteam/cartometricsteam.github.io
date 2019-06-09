@@ -7476,7 +7476,7 @@ a {
 }
 
 .section-background-image  {
-        background: url(http://cartometrics.com/assets/barcelona.png);
+        background: url(https://cartometrics.com/assets/barcelona.png);
         no-repeat center;
         background-size: cover;
 
@@ -7484,7 +7484,13 @@ a {
        }
 
 
+.main-background-image  {
+               background: url(https://cartometrics.com/assets/images/ui/fondo.png);
+               no-repeat center;
+               background-size: cover;
 
+
+              }
 
 
 
